@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeaderBoard js</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="heading">Your LeaderBoard</div>
+    <div class="wrapper">
+      
+      <form action="">
+        <input type="text" placeholder="Enter first name" name="fname" required/>
+        <input type="text" placeholder="Enter last name" name="lname" required />
+        <select  name="country" required>
+          <option value="" selected disabled>Select Country</option>
+          <option value="India">India</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Austrelia">Austrelia</option>
+          <option value="Newzeland">Newzeland</option>
+          <option value="South-Africa">South-Africa</option>
+        </select>
+        <input type="number" placeholder="Enter Score" name="score" min="0" required/>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <div id="leaderBoard"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
